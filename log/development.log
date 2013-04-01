@@ -4012,3 +4012,1415 @@ Served asset /twits.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 10:40:02 -0600
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 10:53:58 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 10:53:59 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 10:53:59 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 10:53:59 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (4ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /twits.css - 200 OK (17ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 10:56:02 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:15:57 -0600
+Served asset /twitface.jpg - 200 OK (14ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:17:43 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:17:44 -0600
+Served asset /twitface.jpg - 200 OK (19ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:18:55 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (41.0ms)
+Cache for Asset (application.css) is stale
+Invalid CSS after "}": expected "}", was ""
+Compiled application.css  (3ms)  (pid 984)
+Completed 500 Internal Server Error in 187ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""
+  (in C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/assets/stylesheets/twits.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>TwitfaceRepot</title>
+    5:   <%= stylesheet_link_tag "application" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/twits.css.scss:13
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__623255430_49342440'
+  app/controllers/twits_controller.rb:8:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Compiled twits.css  (5ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /twits.css - 200 OK (11ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:19:04 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (17.0ms)
+Compiled twits.css  (8ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 69ms (Views: 67.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /twits.css - 200 OK (52ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:19:12 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:19:30 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (4ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /twits.css - 200 OK (17ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:19:31 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:19:42 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (14.0ms)
+Compiled twits.css  (4ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:43 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:43 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:43 -0600
+Served asset /twits.css - 200 OK (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:19:43 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:19:43 -0600
+Served asset /twitface.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /twits.css - 200 OK (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:20:54 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:21:04 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (43.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (4ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /twits.css - 200 OK (12ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:21:05 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (2ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /twits.css - 200 OK (11ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:22:46 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (2ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /twits.css - 200 OK (12ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:24:04 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /twits.css - 200 OK (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:24:12 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (17.0ms)
+Compiled twits.css  (5ms)  (pid 984)
+Compiled application.css  (3ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /twits.css - 200 OK (10ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:24:32 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:24:55 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (2ms)  (pid 984)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /twits.css - 200 OK (10ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:24:56 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:25:40 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Cache for Asset (application.css) is stale
+Invalid CSS after "...-color: #DDDDDD": expected ";", was ""
+Compiled application.css  (1ms)  (pid 984)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (Invalid CSS after "...-color: #DDDDDD": expected ";", was ""
+  (in C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/assets/stylesheets/twits.css.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>TwitfaceRepot</title>
+    5:   <%= stylesheet_link_tag "application" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/twits.css.scss:21
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__623255430_49342440'
+  app/controllers/twits_controller.rb:8:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (6ms)  (pid 984)
+Compiled application.css  (2ms)  (pid 984)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /twits.css - 200 OK (12ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:25:47 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:27:02 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (101.0ms)
+Compiled twits.css  (6ms)  (pid 10216)
+Compiled application.css  (3ms)  (pid 10216)
+  [1m[35mTwit Load (128.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 605ms (Views: 475.0ms | ActiveRecord: 129.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /twits.css - 200 OK (16ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:27:08 -0600
+Served asset /twitface.jpg - 200 OK (11ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (5ms)  (pid 10216)
+Compiled application.css  (3ms)  (pid 10216)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 131ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /twits.css - 200 OK (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:27:52 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (6ms)  (pid 10216)
+Compiled application.css  (2ms)  (pid 10216)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /twits.css - 200 OK (16ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:28:11 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+Compiled twits.css  (10ms)  (pid 10216)
+Compiled application.css  (3ms)  (pid 10216)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /twits.css - 200 OK (9ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:29:16 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+Compiled twits.css  (6ms)  (pid 10216)
+Compiled application.css  (3ms)  (pid 10216)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+Served asset /twits.css - 200 OK (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:32 -0600
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:33 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:33 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:33 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:33 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:29:33 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 11:29:42 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (12.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:42 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:42 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:42 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:29:43 -0600
+Served asset /twitface.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (11.0ms)
+Compiled twits.css  (6ms)  (pid 10216)
+Compiled application.css  (2ms)  (pid 10216)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:12 -0600
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:13 -0600
+Served asset /twits.css - 200 OK (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:13 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:13 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:13 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:13 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (17.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:16 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (12.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:20 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (44.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:22 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits/3" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered twits/show.html.erb within layouts/application (12.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:24 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
