@@ -15,5 +15,7 @@
   <%= @twit.last_name %>
 </p>
 
-<%= link_to 'Edit', edit_twit_path(@twit) %> |
+<% if @twit.id == session[:twit_id] %>
+	<%= link_to 'Edit', edit_twit_path(@twit) %> |
+<% end %>
 <%= link_to 'Back', twits_path %>

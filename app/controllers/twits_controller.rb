@@ -1,4 +1,5 @@
 class TwitsController < ApplicationController
+  helper_method :twit_can_edit
   # GET /twits
   # GET /twits.json
   def index
@@ -79,5 +80,9 @@ class TwitsController < ApplicationController
       format.html { redirect_to twits_url }
       format.json { head :ok }
     end
+  end
+  
+  def twit_can_edit
+	session[:twit_id] == params[:id]
   end
 end
