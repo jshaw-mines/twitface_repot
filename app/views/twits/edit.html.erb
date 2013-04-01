@@ -1,6 +1,8 @@
 <h1>Editing twit</h1>
 
-<%= render 'form' %>
+<% if @twit.id == session[:twit_id] %>
+	<%= render 'form' %>
+<% end %>
 
 <%= link_to 'Show', @twit %> |
 <%= link_to 'Back', twits_path %>
