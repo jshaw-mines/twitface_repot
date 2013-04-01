@@ -9,6 +9,8 @@ class Twit < ActiveRecord::Base
 	validates_presence_of :first_name
 	validates_presence_of :last_name
 	
+	has_attached_file :photo
+	
 	def encrypt_password
 		if password.present?
 			self.password_salt = BCrypt::Engine.generate_salt

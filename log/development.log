@@ -1488,3 +1488,15 @@ ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
   
 
 Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "twits" ADD "photo_file_name" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "twits" ADD "photo_content_type" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "twits" ADD "photo_file_size" integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "twits" ADD "photo_updated_at" datetime
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401155155')[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("twits")
