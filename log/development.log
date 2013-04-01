@@ -1500,3 +1500,237 @@ Migrating to AddAttachmentPhotoToTwits (20130401155155)
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("twits")
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 09:57:46 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 301ms (Views: 298.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:57:51 -0600
+Served asset /all.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:57:51 -0600
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/photos/original/missing.png" for 127.0.0.1 at 2013-04-01 09:57:51 -0600
+
+ActionController::RoutingError (No route matches [GET] "/photos/original/missing.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/twits/1/edit" for 127.0.0.1 at 2013-04-01 09:57:56 -0600
+  Processing by TwitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered twits/_form.html.erb (16.0ms)
+Rendered twits/edit.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:57:56 -0600
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:57:56 -0600
+Served asset /all.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started PUT "/twits/1" for 127.0.0.1 at 2013-04-01 09:58:10 -0600
+  Processing by TwitsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "twit"=>{"username"=>"jshaw", "first_name"=>"josh", "last_name"=>"shaw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "photo"=>#<ActionDispatch::Http::UploadedFile:0x49a27b8 @original_filename="I am a nerd.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"twit[photo]\"; filename=\"I am a nerd.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:C:/Users/Joshua/AppData/Local/Temp/RackMultipart20130401-984-1t1mvgx>>}, "commit"=>"Update Twit", "id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (1.0ms)[0m  UPDATE "twits" SET "photo_file_name" = 'I_am_a_nerd.jpg', "photo_content_type" = 'image/jpeg', "photo_file_size" = 0, "photo_updated_at" = '2013-04-01 15:58:10.857600', "updated_at" = '2013-04-01 15:58:10.858600' WHERE "twits"."id" = 1
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/twits/1
+Completed 302 Found in 348ms
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 09:58:11 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:58:11 -0600
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:58:11 -0600
+Served asset /all.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 09:58:56 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:58:56 -0600
+Served asset /all.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:58:56 -0600
+Served asset /defaults.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 09:59:00 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:59:00 -0600
+Served asset /all.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:59:00 -0600
+Served asset /defaults.js - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 09:59:03 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 248ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:59:03 -0600
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:59:03 -0600
+Served asset /all.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 09:59:07 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:59:07 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (13.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:59:07 -0600
+Served asset /all.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:59:07 -0600
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 09:59:09 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (11.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:59:09 -0600
+Served asset /all.css - 404 Not Found (30ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:59:09 -0600
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
