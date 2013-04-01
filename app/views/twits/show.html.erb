@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @twit.username %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @twit.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @twit.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_twit_path(@twit) %> |
+<%= link_to 'Back', twits_path %>

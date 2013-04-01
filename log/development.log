@@ -1,0 +1,1490 @@
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (167.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (122.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 06:44:59 -0600
+Served asset /rails.png - 200 OK (52ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 06:45:31 -0600
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 06:46:08 -0600
+  Processing by TwitsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'twits'):
+  app/controllers/twits_controller.rb:5:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (115.0ms)
+
+
+Started GET "/twit" for 127.0.0.1 at 2013-04-01 06:46:15 -0600
+
+ActionController::RoutingError (No route matches [GET] "/twit"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 06:46:55 -0600
+  Processing by TwitsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'twits'):
+  app/controllers/twits_controller.rb:5:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130401124102')
+  [1m[36m (1.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 06:57:46 -0600
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 06:57:49 -0600
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 06:58:06 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (52.0ms)
+Compiled application.css  (5ms)  (pid 11324)
+Compiled scaffolds.css  (39ms)  (pid 11324)
+Compiled twits.css  (2ms)  (pid 11324)
+Compiled application.js  (36ms)  (pid 11324)
+Compiled jquery.js  (75ms)  (pid 11324)
+Compiled jquery_ujs.js  (13ms)  (pid 11324)
+Compiled twits.js  (1272ms)  (pid 11324)
+Completed 200 OK in 1802ms (Views: 1801.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 06:58:08 -0600
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 06:58:08 -0600
+Served asset /scaffolds.css - 200 OK (32ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 06:58:09 -0600
+Served asset /twits.css - 200 OK (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 06:58:09 -0600
+Served asset /jquery.js - 200 OK (33ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 06:58:09 -0600
+Served asset /jquery_ujs.js - 200 OK (18ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 06:58:09 -0600
+Served asset /twits.js - 200 OK (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 06:58:09 -0600
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/twits/new" for 127.0.0.1 at 2013-04-01 06:58:11 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (11.0ms)
+Rendered twits/new.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/twits/new" for 127.0.0.1 at 2013-04-01 07:05:57 -0600
+
+SyntaxError (C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/models/twit.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+			self password_hash = BCrypt::Engine.hash_secret...
+			                  ^):
+  app/controllers/twits_controller.rb:1:in `<top (required)>'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (34.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 07:12:17 -0600
+
+SyntaxError (C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/models/twit.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+			self password_hash = BCrypt::Engine.hash_secret...
+			                  ^):
+  app/controllers/twits_controller.rb:1:in `<top (required)>'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 07:12:49 -0600
+
+ActionController::RoutingError (undefined method `validates_presense_of' for #<Class:0x4b570d8>):
+  app/models/twit.rb:7:in `<class:Twit>'
+  app/models/twit.rb:1:in `<top (required)>'
+  app/controllers/twits_controller.rb:1:in `<top (required)>'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /twits.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /twits.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:17 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits/new" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (12.0ms)
+Rendered twits/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:13:21 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/twits" for 127.0.0.1 at 2013-04-01 07:14:08 -0600
+  Processing by TwitsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "twit"=>{"username"=>"jshaw", "first_name"=>"josh", "last_name"=>"shaw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Twit"}
+Rendered twits/_form.html.erb (3.0ms)
+Rendered twits/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 44ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/twits" for 127.0.0.1 at 2013-04-01 07:14:14 -0600
+  Processing by TwitsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "twit"=>{"username"=>"jshaw", "first_name"=>"josh", "last_name"=>"shaw", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Twit"}
+  [1m[35mSQL (151.0ms)[0m  INSERT INTO "twits" ("created_at", "first_name", "last_name", "password_hash", "password_salt", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 01 Apr 2013 13:14:14 UTC +00:00], ["first_name", "josh"], ["last_name", "shaw"], ["password_hash", "$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny"], ["password_salt", "$2a$10$aad/Ily5p0.k.bYbfvu8L."], ["updated_at", Mon, 01 Apr 2013 13:14:14 UTC +00:00], ["username", "jshaw"]]
+Redirected to http://localhost:3000/twits/1
+Completed 302 Found in 406ms
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:14:15 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-04-01 07:30:03 -0600
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (50.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-04-01 07:38:17 -0600
+  Processing by SessionsController#index as HTML
+Rendered sessions/index.html.erb within layouts/application (203.0ms)
+Completed 500 Internal Server Error in 214ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x497c340>:0x4978128>):
+    1: <h1>Log In/h1>
+    2: 
+    3: <div class="field">
+    4: <%= f.label :username %><br />
+    5: <%= f.text_field :username %>
+    6: </div>
+    7: <div class="field">
+  app/views/sessions/index.html.erb:4:in `_app_views_sessions_index_html_erb__830389836_38290788'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2013-04-01 07:40:04 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sessions"}):
+    1: <h1>Log In to Twitface</h1>
+    2: 
+    3: <%= form_tag session_path do %>
+    4: 	<p>
+    5: 		<%= label_tag :username %><br />
+    6: 		<%= text_field_tag :username, params[:username] %>
+  app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb___867918254_38612604'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 07:42:12 -0600
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-04-01 07:42:18 -0600
+  Processing by SessionsController#index as HTML
+Rendered sessions/index.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x4a278e0>:0x4a20890>):
+    1: <h1>Log In/h1>
+    2: 
+    3: <div class="field">
+    4: <%= f.label :username %><br />
+    5: <%= f.text_field :username %>
+    6: </div>
+    7: <div class="field">
+  app/views/sessions/index.html.erb:4:in `_app_views_sessions_index_html_erb__830389836_38290788'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 07:43:16 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (10.0ms)
+Compiled application.css  (3ms)  (pid 4472)
+Compiled sessions.css  (4ms)  (pid 4472)
+Compiled application.js  (6ms)  (pid 4472)
+Compiled sessions.js  (289ms)  (pid 4472)
+Completed 200 OK in 388ms (Views: 386.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /sessions.css - 200 OK (13ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /twits.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:17 -0600
+Served asset /sessions.js - 200 OK (14ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:18 -0600
+Served asset /twits.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:18 -0600
+Served asset /application.js - 200 OK (50ms)
+
+
+Started GET "/twits/new" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (31.0ms)
+Rendered twits/new.html.erb within layouts/application (86.0ms)
+Completed 200 OK in 98ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:43:24 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:45:06 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-04-01 07:45:08 -0600
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-04-01 07:45:11 -0600
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 07:49:39 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 274ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /twits.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:49:44 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 07:49:49 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Completed 500 Internal Server Error in 664ms
+
+NameError (undefined local variable or method `user' for #<SessionsController:0x476d180>):
+  app/controllers/sessions_controller.rb:7:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 07:50:41 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 285ms
+
+ActionView::Template::Error (undefined method `context_tag' for #<#<Class:0x462ba00>:0x4624848>):
+    9: <body>
+    10: 
+    11: <% flash.each do |name, msg| %>
+    12: 	<%= context_tag :div, msg, :id => "flash_#{name}" %>
+    13: <% end %>
+    14: 
+    15: <%= yield %>
+  app/views/layouts/application.html.erb:12:in `block in _app_views_layouts_application_html_erb___65633712_38151756'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___65633712_38151756'
+  app/controllers/sessions_controller.rb:12:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 129ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 07:51:32 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 07:51:33 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 07:51:33 -0600
+Served asset /twits.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 07:51:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 07:51:37 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Completed 500 Internal Server Error in 134ms
+
+NameError (undefined local variable or method `sessions' for #<SessionsController:0x4a5c0f8>):
+  app/controllers/sessions_controller.rb:8:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:16:27 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 08:16:28 -0600
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:16:33 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:16:37 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-01 08:16:37 -0600
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:37 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 188ms (Views: 14.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 139ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (11.0ms)
+Rendered twits/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:17:45 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-04-01 08:20:30 -0600
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for SessionsController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-04-01 08:20:38 -0600
+
+SyntaxError (C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/controllers/sessions_controller.rb:17: syntax error, unexpected ']', expecting '}'
+	session{:twit_id] = nil
+	                 ^
+C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/controllers/sessions_controller.rb:20: syntax error, unexpected keyword_end, expecting '}'):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-04-01 08:21:03 -0600
+
+SyntaxError (C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/controllers/sessions_controller.rb:20: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (12.0ms)
+Rendered twits/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /sessions.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:21:13 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:32:56 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (30.0ms)
+Rendered twits/new.html.erb within layouts/application (32.0ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (undefined local variable or method `current_twit' for #<#<Class:0x4892e98>:0x484ad90>):
+    9: <body>
+    10: 
+    11: <div id="twit_nav">
+    12: 	<% if current_twit %>
+    13: 		Logged in as <%= current_twit.username %>
+    14: 		<%= link_to "Log out", log_out_path %>
+    15: 	<% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___65633712_38050008'
+  app/controllers/twits_controller.rb:29:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:34:29 -0600
+
+SyntaxError (C:/Users/Joshua/Documents/Spring_13/Web Apps/twitface_repot/app/controllers/application_controller.rb:5: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/twits_controller.rb:1:in `<top (required)>'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:34:36 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (12.0ms)
+Rendered twits/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (undefined local variable or method `current_twit' for #<#<Class:0x49b3030>:0x49ae0c8>):
+    9: <body>
+    10: 
+    11: <div id="twit_nav">
+    12: 	<% if current_twit %>
+    13: 		Logged in as <%= current_twit.username %>
+    14: 		<%= link_to "Log out", log_out_path %>
+    15: 	<% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___65633712_38050008'
+  app/controllers/twits_controller.rb:29:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (10.0ms)
+Rendered twits/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:07 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:12 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 133ms (Views: 14.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:16 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 120ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (11.0ms)
+Rendered twits/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:21 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 08:35:38 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bVMn59JuXjarr3BwARn/RWRoM/FprGCBv22RZRZum1o=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+  Processing by TwitsController#new as HTML
+Rendered twits/_form.html.erb (10.0ms)
+Rendered twits/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 09:24:48 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-01 09:25:26 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-01 09:25:27 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:27:33 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (undefined local variable or method `current_twit' for #<#<Class:0x4a15478>:0x4a010d8>):
+    9: <body>
+    10: 
+    11: <div id="twit_nav">
+    12: 	<% if current_twit %>
+    13: 		Logged in as <%= @current_twit.username %>
+    14: 		<%= link_to "Log out", log_out_path %>
+    15: 	<% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___65633712_38841528'
+  app/controllers/twits_controller.rb:7:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:29:06 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined local variable or method `current_twit' for #<#<Class:0x49891f8>:0x48cb100>):
+    9: <body>
+    10: 
+    11: <div id="twit_nav">
+    12: 	<% if current_twit %>
+    13: 		Logged in as <%= current_twit.username %>
+    14: 		<%= link_to "Log out", log_out_path %>
+    15: 	<% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___65633712_38554956'
+  app/controllers/twits_controller.rb:7:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:30:16 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (undefined local variable or method `current_twit' for #<#<Class:0x458a420>:0x4577070>):
+    9: <body>
+    10: 
+    11: <div id="twit_nav">
+    12: 	<% if current_twit %>
+    13: 		Logged in as <%= current_twit.username %>
+    14: 		<%= link_to "Log out", log_out_path %>
+    15: 	<% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___65633712_38554956'
+  app/controllers/twits_controller.rb:7:in `index'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:33:06 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (9.0ms)
+  [1m[36mTwit Load (84.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 119ms (Views: 33.0ms | ActiveRecord: 85.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:33:06 -0600
+Served asset /all.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:33:06 -0600
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:34:20 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (12.0ms)
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:34:20 -0600
+Served asset /defaults.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:34:20 -0600
+Served asset /all.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:35:08 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (9.0ms)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:35:08 -0600
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:35:08 -0600
+Served asset /all.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-04-01 09:41:10 -0600
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 09:41:10 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" 
+Rendered twits/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at 2013-04-01 09:41:10 -0600
+Served asset /defaults.js - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/defaults.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/all.css" for 127.0.0.1 at 2013-04-01 09:41:10 -0600
+Served asset /all.css - 404 Not Found (25ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/all.css"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
