@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130401155155) do
+ActiveRecord::Schema.define(:version => 20130413180919) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "title"
+    t.integer  "twit_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "title"
+    t.integer  "album_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+  end
 
   create_table "twits", :force => true do |t|
     t.string   "username"
@@ -21,10 +39,6 @@ ActiveRecord::Schema.define(:version => 20130401155155) do
     t.string   "password_hash"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
   end
 
 end

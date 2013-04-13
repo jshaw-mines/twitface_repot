@@ -5424,3 +5424,474 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-01 11:30:30 -0600
 Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-13 11:45:41 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (169.0ms)
+Compiled twits.css  (59ms)  (pid 5132)
+Compiled application.css  (5ms)  (pid 5132)
+Completed 200 OK in 2322ms (Views: 2318.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /application.css - 200 OK (32ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /twits.css - 200 OK (513ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:02 -0600
+Served asset /twits.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:04 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:46:04 -0600
+Served asset /twitface.jpg - 304 Not Modified (65ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-04-13 11:46:26 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 73ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:28 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:29 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:30 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:30 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:46:30 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-13 11:46:39 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PIV65rPUS+gRljoAAJk6YgFt/iM7T9T+XZYEnKCR11U=", "username"=>"jshaw", "password"=>"[FILTERED]", "commit"=>"Save changes"}
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."username" = 'jshaw' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 998ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-13 11:46:40 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (15.0ms)
+  [1m[35mTwit Load (137.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 168ms (Views: 30.0ms | ActiveRecord: 138.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:46:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:46:42 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-13 11:47:01 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/show.html.erb within layouts/application (17.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:02 -0600
+Served asset /twits.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:03 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:04 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:05 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:05 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:47:06 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/twits/1/edit" for 127.0.0.1 at 2013-04-13 11:47:31 -0600
+  Processing by TwitsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered twits/_form.html.erb (5.0ms)
+Rendered twits/edit.html.erb within layouts/application (848.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 909ms (Views: 905.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:32 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:47:33 -0600
+Served asset /twitface.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-13 11:47:40 -0600
+  Processing by TwitsController#index as HTML
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" [0m
+Rendered twits/index.html.erb within layouts/application (16.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 119ms (Views: 113.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:41 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:41 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-13 11:47:42 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+DEPRECATION WARNING: Method `drop_attached_file` in the migration has been deprecated and will be replaced by `remove_attachment`. (called from measure at C:/Ruby192/lib/ruby/1.9.1/benchmark.rb:295)
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', 'I_am_a_nerd.jpg', 'image/jpeg', 0, '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', 'aviators_color.jpg', 'image/jpeg', 0, '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', 'aviators_color.jpg', 'image/jpeg', 0, '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', 'Bump-O-Meter_app_screenshot.jpg', 'image/jpeg', 0, '2013-04-01 16:35:56.768600')
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', 'image/jpeg', 0, '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', 'image/jpeg', 0, '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', 'image/jpeg', 0, '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', 'image/jpeg', 0, '2013-04-01 16:35:56.768600')
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', 'image/jpeg', 0, '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', 'image/jpeg', 0, '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', 'image/jpeg', 0, '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', 'image/jpeg', 0, '2013-04-01 16:35:56.768600')
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', 0, '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', 0, '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', 0, '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', 0, '2013-04-01 16:35:56.768600')
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', 0, '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', 0, '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', 0, '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', 0, '2013-04-01 16:35:56.768600')
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.768600')
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', '2013-04-01 15:58:10.857600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.423600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.342600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.768600')
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600')
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130401155155'
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mALTER TABLE "twits" ADD "photo_file_name" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "twits" ADD "photo_content_type" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "twits" ADD "photo_file_size" integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "twits" ADD "photo_updated_at" datetime
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401155155')[0m
+Migrating to CreateAlbums (20130413180130)
+  [1m[35m (1.0ms)[0m  CREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "twit_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130413180130')[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("albums")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAlbums (20130413180130)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "albums"
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130413180130'[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("twits")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+DEPRECATION WARNING: Method `drop_attached_file` in the migration has been deprecated and will be replaced by `remove_attachment`. (called from measure at C:/Ruby192/lib/ruby/1.9.1/benchmark.rb:295)
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL, NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_name","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL, NULL, NULL, NULL)
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (1.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL, NULL, NULL)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL, NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_content_type","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL, NULL, NULL)
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL, NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_file_size","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL, NULL)
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL)[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL)
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TEMPORARY TABLE "altered_twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at","photo_updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600', NULL)
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "twits"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "twits" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "password_salt" varchar(255), "password_hash" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_twits")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_twits"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (1, 'jshaw', 'josh', 'shaw', '$2a$10$aad/Ily5p0.k.bYbfvu8L.', '$2a$10$aad/Ily5p0.k.bYbfvu8L.b3UKs1nbTz.wyQUkbkhCrvYChWoNGny', '2013-04-01 13:14:14.691600', '2013-04-01 15:58:10.858600')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (2, 'test', 'test', 'er', '$2a$10$2cI8KutuD2Vc30rXTbXv/.', '$2a$10$2cI8KutuD2Vc30rXTbXv/.FQjljlipzeQZrCEGmRe/VeNrbUolY6.', '2013-04-01 16:24:27.525600', '2013-04-01 16:24:27.525600')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (3, 'test', 'test', 'er', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.', '$2a$10$tmiPFmRfU1UbdkAIJc5UL.Ws8/XIh4hR8ebUH.W7yzbNjDVFw/JDu', '2013-04-01 16:27:51.443600', '2013-04-01 16:27:51.443600')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "twits" ("id","username","first_name","last_name","password_salt","password_hash","created_at","updated_at") VALUES (4, 'test2', 'josh', 'test', '$2a$10$/e41472Kp0yx7OVg1rCtj.', '$2a$10$/e41472Kp0yx7OVg1rCtj.kVJOiiTvceu3WxqdjdZ5aElwUvAap2S', '2013-04-01 16:35:56.871600', '2013-04-01 16:35:56.871600')
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "altered_twits"[0m
+  [1m[35m (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20130401155155'
+  [1m[36m (1.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130401155155')[0m
+Migrating to CreateAlbums (20130413180130)
+  [1m[35m (1.0ms)[0m  CREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "twit_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130413180130')[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("albums")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+Migrating to CreateAlbums (20130413180130)
+Migrating to CreatePhotos (20130413180714)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "album_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130413180714')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("albums")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("photos")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("twits")[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTwits (20130401124102)
+Migrating to AddAttachmentPhotoToTwits (20130401155155)
+Migrating to CreateAlbums (20130413180130)
+Migrating to CreatePhotos (20130413180714)
+Migrating to AddAttachmentPictureToPhotos (20130413180919)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "photos" ADD "picture_file_name" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "photos" ADD "picture_content_type" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "photos" ADD "picture_file_size" integer[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "photos" ADD "picture_updated_at" datetime
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130413180919')[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("albums")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("photos")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("twits")
