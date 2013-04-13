@@ -8,7 +8,7 @@
 
 <% @twits.each do |twit| %>
   <tr>
-	<td id="table_image"><%= image_tag twit.photo.url %></td>
+	<td id="table_image"></td>
     <td><%= link_to twit.username, twit %></td>
   </tr>
 <% end %>
