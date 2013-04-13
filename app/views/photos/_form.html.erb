@@ -16,8 +16,11 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :album_id %><br />
-    <%= f.number_field :album_id %>
+    <%= f.label :album %><br />
+    <%= f.collection_select :album_id, Album.all, :id, :title %>
+  </div>
+  <div class="field">
+    <%= f.file_field :picture %><br />
   </div>
   <div class="actions">
     <%= f.submit %>
