@@ -14,6 +14,7 @@ class PhotosController < ApplicationController
   # GET /photos/1.json
   def show
     @photo = Photo.find(params[:id])
+	@album = Album.find(@photo.album_id)
 
     respond_to do |format|
       format.html # show.html.erb

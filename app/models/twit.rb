@@ -9,7 +9,7 @@ class Twit < ActiveRecord::Base
 	validates_presence_of :first_name
 	validates_presence_of :last_name
 	
-	has_many: albums, dependent: :destroy
+	has_many :albums, dependent: :destroy
 	
 	def encrypt_password
 		if password.present?

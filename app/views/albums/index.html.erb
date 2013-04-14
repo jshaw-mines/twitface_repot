@@ -1,22 +1,20 @@
 <h1>Listing albums</h1>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Twit</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @albums.each do |album| %>
-  <tr>
-    <td><%= album.title %></td>
-    <td><%= album.twit_id %></td>
-    <td><%= link_to 'Show', album %></td>
-    <td><%= link_to 'Edit', edit_album_path(album) %></td>
-    <td><%= link_to 'Destroy', album, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <% photo = album.photos.order("created_at").last %>
+	  <tr>		
+		<% if photo %>
+			<td id="table_image"><%= image_tag photo.picture.url %></td>
+		<% else %>
+			<td></td>
+		<% end %>
+		
+		<td><%= link_to album.title, album %></td>
+		<td><%= link_to 'Edit', edit_album_path(album) %></td>
+		<td><%= link_to 'Delete Album', album, confirm: 'Are you sure? This will delete all pictures in the Album', method: :delete %></td>
+	  </tr>
 <% end %>
 </table>
 
