@@ -7,20 +7,9 @@
   </tr>
 
 <% @twits.each do |twit| %>
-	<% album = twit.albums.last %>
-	<% if album %>
-		<% photo = album.photos.order("created_at").last %>
-		<tr>		
-			<% if photo %>
-				<td id="table_image"><%= image_tag photo.picture.url %></td>
-			<% else %>
-				<td></td>
-			<% end %>
-	<% else %>
-		  <td></td>
-	<% end %>
-		<td><%= link_to twit.username, twit %></td>
-	  </tr>
+  </tr>
+	<td><%= link_to twit.username, twit %></td>
+  </tr>
 <% end %>
 </table>
 

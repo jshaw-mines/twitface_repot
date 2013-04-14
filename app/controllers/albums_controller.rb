@@ -2,8 +2,9 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.json
   def index
-    @albums = Album.all
-
+	@albums = Album.find_all_by_twit_id(params[:view_id])
+	@twit = Twit.find(params[:view_id])
+	
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @albums }
@@ -40,11 +41,13 @@ class AlbumsController < ApplicationController
   # POST /albums
   # POST /albums.json
   def create
-    @album = Album.new(params[:album])
+
+    @album = Album.new(params[:album])	
+	@album.twit_id = session[:twit_id]
 
     respond_to do |format|
       if @album.save
-        format.html { redirect_to albums_path, notice: 'Album was successfully created.' }
+        format.html { redirect_to albums_path(:view_id => @album.twit_id), notice: 'Album was successfully created.' }
         format.json { render json: @album, status: :created, location: @album }
       else
         format.html { render action: "new" }
