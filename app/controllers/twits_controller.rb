@@ -18,6 +18,8 @@ class TwitsController < ApplicationController
 	if @twit.profile_photo_id
 		@photo = Photo.find(@twit.profile_photo_id)
 	end
+	rescue ActiveRecord::RecordNotFound
+		@photo = nil
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @twit }
