@@ -1,13 +1,18 @@
 <h2>Your fellow Twits</h2>
 
 <table>
-  <tr>
-	<th></th>
-    <th>Username</th>
-  </tr>
 
 <% @twits.each do |twit| %>
   </tr>
+	<td id="table_image">	
+		<% if twit.profile_photo_id %>
+			<% photo = Photo.find(twit.profile_photo_id) rescue photo = nil %>
+		<% end %>
+			
+		<% if photo %>
+			<%= image_tag photo.picture.url %>
+		<% end %> 
+	</td>		
 	<td><%= link_to twit.username, twit %></td>
   </tr>
 <% end %>
