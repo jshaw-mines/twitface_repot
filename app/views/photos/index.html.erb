@@ -1,25 +1,17 @@
 <h1>Listing photos</h1>
 
 <table>
-  <tr>
-    <th>Title</th>
-	<th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @photos.each do |photo| %>
-  <tr>
-    <td><%= photo.title %></td>
-	<td><%= image_tag photo.picture.url %>
-    <td><%= link_to 'Show', photo %></td>
-    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-    <td><%= link_to 'Destroy', photo, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+<% @albums.each do |album| %>
+  <% photos = Photo.find_all_by_album_id(album.id) %>
+  <% photos.each do |photo| %>
+	<tr>
+	  <td><%= photo.title %></td>
+	  <td id="table_image"><%= image_tag photo.picture.url %>
+	  <td><%= link_to 'Select as Profile Picture', edit_photo_path(photo, :view_id => params[:view_id]) %></td>
+	</tr>
+  <% end %>
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Photo', new_photo_path %>
+

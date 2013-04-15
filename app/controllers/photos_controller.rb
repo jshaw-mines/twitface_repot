@@ -2,7 +2,7 @@ class PhotosController < ApplicationController
   # GET /photos
   # GET /photos.json
   def index
-    @photos = Photo.all
+    @albums = Album.find_all_by_twit_id(params[:view_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,6 +26,7 @@ class PhotosController < ApplicationController
   # GET /photos/new.json
   def new
     @photo = Photo.new
+	@albums = Album.find_all_by_twit_id(params[:view_id])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,7 +36,14 @@ class PhotosController < ApplicationController
 
   # GET /photos/1/edit
   def edit
-    @photo = Photo.find(params[:id])
+    @twit = Twit.find(params[:view_id])
+	@photo = Photo.find(params[:id])
+	@twit.profile_photo_id = @photo.id
+	@twit.save
+	respond_to do |format|
+        format.html { redirect_to @twit}
+        format.json { head :ok }
+	end
   end
 
   # POST /photos

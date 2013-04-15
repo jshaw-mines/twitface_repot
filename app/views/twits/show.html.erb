@@ -1,18 +1,16 @@
 <%= link_to 'View Photos', albums_path(:view_id => @twit.id) %>
 
 <p>
-  <b>Username:</b>
-  <%= @twit.username %>
+	<% if @photo %>
+		<%= image_tag @photo.picture.url %><br/>
+	<% end %>
+	<% if @twit.id == session[:twit_id] %>
+		<%= link_to 'Change Profile Picture', photos_path(:view_id => @twit.id) %>
+	<% end %>
 </p>
 
 <p>
-  <b>First name:</b>
-  <%= @twit.first_name %>
-</p>
-
-<p>
-  <b>Last name:</b>
-  <%= @twit.last_name %>
+  <%= @twit.first_name %> <%= @twit.last_name %>
 </p>
 
 <% if @twit.id == session[:twit_id] %>

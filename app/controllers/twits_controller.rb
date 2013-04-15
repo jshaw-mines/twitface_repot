@@ -15,7 +15,9 @@ class TwitsController < ApplicationController
   # GET /twits/1.json
   def show
     @twit = Twit.find(params[:id])
-
+	if @twit.profile_photo_id
+		@photo = Photo.find(@twit.profile_photo_id)
+	end
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @twit }
