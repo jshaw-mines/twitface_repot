@@ -17,3 +17,20 @@
 	<%= link_to 'Edit', edit_twit_path(@twit) %> |
 <% end %>
 <%= link_to 'Back', twits_path %>
+
+<br/>
+
+<h3><%= @twit.first_name %>'s Wall</h3> 
+
+<br/>
+
+<%= link_to 'Write a comment', new_comment_path(:view_id => @twit.id) %>
+
+<table>
+	<% @comments.each do |comment| %>
+		<tr> <td>
+			<%= comment.comment %>
+		</td> </tr>
+	<% end %>
+</table>
+

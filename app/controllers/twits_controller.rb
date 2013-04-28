@@ -19,6 +19,7 @@ class TwitsController < ApplicationController
 	if @twit.profile_photo_id
 		@photo = Photo.find(@twit.profile_photo_id)
 	end
+	@comments = Comment.find_all_by_twit_id(params[:id])
 	rescue ActiveRecord::RecordNotFound
 		@photo = nil
     respond_to do |format|
