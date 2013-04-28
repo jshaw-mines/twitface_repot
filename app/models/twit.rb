@@ -12,6 +12,7 @@ class Twit < ActiveRecord::Base
 	has_attached_file :profile_photo
 	
 	has_many :albums, dependent: :destroy
+	has_many :comments, dependent: :destroy
 	
 	def encrypt_password
 		if password.present?
