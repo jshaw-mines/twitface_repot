@@ -11,8 +11,10 @@
     </div>
   <% end %>
   
-  <% @comment.twit_id = params[:view_id] %>
   
+  <div class="field">
+   <% f.hidden_field :comment, :twit_id => params[:view_id] %>
+  </div>
   <div class="field">
     <%= f.text_area :comment %>
   </div>

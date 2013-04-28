@@ -25,8 +25,6 @@ class CommentsController < ApplicationController
   # GET /comments/new.json
   def new
     @comment = Comment.new
-	@comment.twit_id = (params[:view_id])
-	@comment.save
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,12 +41,11 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(params[:comment])
-	@twit = Twit.find(@comment.twit_id)
 	
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to twit_path(@twit), notice: 'Comment was successfully created.' }
-        format.json { render json: twit_path(@twit), status: :created, location: @comment }
+        format.html { redirect_to twits_path, notice: 'Comment was successfully created.' }
+        format.json { render json: twits_path, status: :created, location: @comment }
       else
         format.html { render action: "new" }
         format.json { render json: @comment.errors, status: :unprocessable_entity }

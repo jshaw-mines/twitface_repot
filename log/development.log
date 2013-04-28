@@ -31614,3 +31614,727 @@ ActiveRecord::RecordNotFound (Couldn't find Twit without an ID):
 Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
 Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
 Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mComment Load (0.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."twit_id" = 1
+Rendered twits/show.html.erb within layouts/application (11.0ms)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 91ms (Views: 26.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 12:43:44 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (3.0ms)
+Rendered comments/new.html.erb within layouts/application (32.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 84ms (Views: 78.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 12:43:49 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 12:43:50 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 12:43:58 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"asdfadsf"}, "commit"=>"Create Comment"}
+Completed 404 Not Found in 23ms
+
+ActiveRecord::RecordNotFound (Couldn't find Twit without an ID):
+  app/controllers/comments_controller.rb:46:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 12:58:56 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (227.0ms)
+Rendered comments/new.html.erb within layouts/application (231.0ms)
+Completed 500 Internal Server Error in 241ms
+
+ActionView::Template::Error (undefined local variable or method `view_id' for #<#<Class:0x5050bc0>:0x504c078>):
+    11:     </div>
+    12:   <% end %>
+    13:   
+    14:   <% f.hidden_field :twit_id, params[view_id] %>
+    15:   
+    16:   <div class="field">
+    17:     <%= f.text_area :comment %>
+  app/views/comments/_form.html.erb:14:in `block in _app_views_comments__form_html_erb___1023202298_42085884'
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___1023202298_42085884'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb___756952981_41105784'
+  app/controllers/comments_controller.rb:29:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 12:59:16 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (8.0ms)
+Rendered comments/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `merge' for "1":String):
+    11:     </div>
+    12:   <% end %>
+    13:   
+    14:   <% f.hidden_field :twit_id, params[:view_id] %>
+    15:   
+    16:   <div class="field">
+    17:     <%= f.text_area :comment %>
+  app/views/comments/_form.html.erb:14:in `block in _app_views_comments__form_html_erb___1023202298_39291624'
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___1023202298_39291624'
+  app/views/comments/new.html.erb:3:in `_app_views_comments_new_html_erb___756952981_41105784'
+  app/controllers/comments_controller.rb:29:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (7.0ms)
+Rendered comments/new.html.erb within layouts/application (10.0ms)
+  [1m[36mTwit Load (0.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:00:22 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:00:25 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"adfasdf"}, "commit"=>"Create Comment"}
+Completed 404 Not Found in 24ms
+
+ActiveRecord::RecordNotFound (Couldn't find Twit without an ID):
+  app/controllers/comments_controller.rb:44:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:02:45 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"adfasdfadfadfasfd"}, "commit"=>"Create Comment"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `twit_id' for nil:NilClass):
+  app/controllers/comments_controller.rb:44:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:12:25 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"adfasdfadfadfasfd"}, "commit"=>"Create Comment"}
+Completed 500 Internal Server Error in 31ms
+
+NoMethodError (undefined method `twit_id' for nil:NilClass):
+  app/controllers/comments_controller.rb:44:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (7.0ms)
+Rendered comments/new.html.erb within layouts/application (9.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:12:28 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:12:31 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"fkfkfkf"}, "commit"=>"Create Comment"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `twit_id' for nil:NilClass):
+  app/controllers/comments_controller.rb:44:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (8.0ms)
+Rendered comments/new.html.erb within layouts/application (10.0ms)
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:13:51 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:13:55 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"bloop"}, "commit"=>"Create Comment"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `twit_id' for nil:NilClass):
+  app/controllers/comments_controller.rb:44:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/comments/new?view_id=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+  Processing by CommentsController#new as HTML
+  Parameters: {"view_id"=>"1"}
+Rendered comments/_form.html.erb (7.0ms)
+Rendered comments/new.html.erb within layouts/application (9.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /albums.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:09 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:18:10 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+  Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"II8emSXMzSEofmjk9xK8TCHduplp3lIs5R4I8g9d3LE=", "comment"=>{"comment"=>"lol"}, "commit"=>"Create Comment"}
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "comments" ("comment", "created_at", "twit_id", "updated_at") VALUES (?, ?, ?, ?)[0m  [["comment", "lol"], ["created_at", Sun, 28 Apr 2013 19:18:13 UTC +00:00], ["twit_id", nil], ["updated_at", Sun, 28 Apr 2013 19:18:13 UTC +00:00]]
+Redirected to http://localhost:3000/twits
+Completed 302 Found in 108ms
+
+
+Started GET "/twits" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+  Processing by TwitsController#index as HTML
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" 
+  [1m[36mPhoto Load (1.0ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 9]]
+Rendered twits/index.html.erb within layouts/application (32.0ms)
+  [1m[35mTwit Load (1.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /twits.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:18:13 -0600
+Served asset /twitface.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/twits/1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+  Processing by TwitsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTwit Load (1.0ms)[0m  [1mSELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mPhoto Load (1.0ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."twit_id" = 1[0m
+Rendered twits/show.html.erb within layouts/application (11.0ms)
+  [1m[35mTwit Load (0.0ms)[0m  SELECT "twits".* FROM "twits" WHERE "twits"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 60ms (Views: 26.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /albums.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.css?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /twits.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /albums.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twits.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /twits.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitface.jpg" for 127.0.0.1 at 2013-04-28 13:18:16 -0600
+Served asset /twitface.jpg - 304 Not Modified (0ms)
