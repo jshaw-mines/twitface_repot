@@ -4,7 +4,7 @@ class TwitsController < ApplicationController
   # GET /twits.json
   def index
     @twits = Twit.all
-	
+	@joke = Joke.find(:all, :from => "/random")
 		
     respond_to do |format|
       format.html # index.html.erb
